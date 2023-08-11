@@ -1,32 +1,48 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@dnd-kit/core': ^6.0.8
+  '@dnd-kit/sortable': ^7.0.2
+  '@dnd-kit/utilities': ^3.2.1
   '@types/node': 20.4.9
   '@types/react': 18.2.20
   '@types/react-dom': 18.2.7
+  '@types/uuid': ^9.0.2
   autoprefixer: 10.4.14
+  clsx: ^2.0.0
   eslint: 8.46.0
   eslint-config-next: 13.4.13
   next: 13.4.13
   postcss: 8.4.27
   react: 18.2.0
   react-dom: 18.2.0
+  tailwind-merge: ^1.14.0
   tailwindcss: 3.3.3
   typescript: 5.1.6
+  uuid: ^9.0.0
 
 dependencies:
+  '@dnd-kit/core': 6.0.8_biqbaboplfbrettd7655fr4n2y
+  '@dnd-kit/sortable': 7.0.2_52scne4zmdeyjh2otzkgz2xfvu
+  '@dnd-kit/utilities': 3.2.1_react@18.2.0
   '@types/node': 20.4.9
   '@types/react': 18.2.20
   '@types/react-dom': 18.2.7
   autoprefixer: 10.4.14_postcss@8.4.27
+  clsx: 2.0.0
   eslint: 8.46.0
   eslint-config-next: 13.4.13_7haavtekmro7ptbnqmctjaodju
   next: 13.4.13_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.27
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  tailwind-merge: 1.14.0
   tailwindcss: 3.3.3
   typescript: 5.1.6
+  uuid: 9.0.0
+
+devDependencies:
+  '@types/uuid': 9.0.2
 
 packages:
 
@@ -45,6 +61,49 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
+    dev: false
+
+  /@dnd-kit/accessibility/3.0.1_react@18.2.0:
+    resolution: {integrity: sha512-HXRrwS9YUYQO9lFRc/49uO/VICbM+O+ZRpFDe9Pd1rwVv2PCNkRiTZRdxrDgng/UkvdC3Re9r2vwPpXXrWeFzg==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      tslib: 2.6.1
+    dev: false
+
+  /@dnd-kit/core/6.0.8_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-lYaoP8yHTQSLlZe6Rr9qogouGUz9oRUj4AHhDQGQzq/hqaJRpFo65X+JKsdHf8oUFBzx5A+SJPUvxAwTF2OabA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@dnd-kit/accessibility': 3.0.1_react@18.2.0
+      '@dnd-kit/utilities': 3.2.1_react@18.2.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      tslib: 2.6.1
+    dev: false
+
+  /@dnd-kit/sortable/7.0.2_52scne4zmdeyjh2otzkgz2xfvu:
+    resolution: {integrity: sha512-wDkBHHf9iCi1veM834Gbk1429bd4lHX4RpAwT0y2cHLf246GAvU2sVw/oxWNpPKQNQRQaeGXhAVgrOl1IT+iyA==}
+    peerDependencies:
+      '@dnd-kit/core': ^6.0.7
+      react: '>=16.8.0'
+    dependencies:
+      '@dnd-kit/core': 6.0.8_biqbaboplfbrettd7655fr4n2y
+      '@dnd-kit/utilities': 3.2.1_react@18.2.0
+      react: 18.2.0
+      tslib: 2.6.1
+    dev: false
+
+  /@dnd-kit/utilities/3.2.1_react@18.2.0:
+    resolution: {integrity: sha512-OOXqISfvBw/1REtkSK2N3Fi2EQiLMlWUlqnOK/UpOISqBZPWpE6TqL+jcPtMOkE8TqYGiURvRdPSI9hltNUjEA==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      tslib: 2.6.1
     dev: false
 
   /@eslint-community/eslint-utils/4.4.0_eslint@8.46.0:
@@ -285,6 +344,10 @@ packages:
   /@types/scheduler/0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
     dev: false
+
+  /@types/uuid/9.0.2:
+    resolution: {integrity: sha512-kNnC1GFBLuhImSnV7w4njQkUiJi0ZXUycu1rUaouPqiKlXkh77JKgdRnTAp1x5eBwcIwbtI+3otwzuIDEuDoxQ==}
+    dev: true
 
   /@typescript-eslint/parser/6.3.0_7haavtekmro7ptbnqmctjaodju:
     resolution: {integrity: sha512-ibP+y2Gr6p0qsUkhs7InMdXrwldjxZw66wpcQq9/PzAroM45wdwyu81T+7RibNCh8oc0AgrsyCwJByncY0Ongg==}
@@ -609,6 +672,11 @@ packages:
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx/2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/2.0.1:
@@ -2229,6 +2297,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
+  /tailwind-merge/1.14.0:
+    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
+    dev: false
+
   /tailwindcss/3.3.3:
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
     engines: {node: '>=14.0.0'}
@@ -2399,6 +2471,11 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: false
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
+    hasBin: true
     dev: false
 
   /watchpack/2.4.0:
